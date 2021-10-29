@@ -1,0 +1,185 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css');
+.chat-wrapper {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    display: flex!important;
+    justify-content: flex-end!important;
+    position: -webkit-sticky!important;
+    position: fixed;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.open-chat {
+    display: flex;
+    background: #4FCE5D;
+    color: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    vertical-align: middle;
+    box-shadow:rgb(0 0 0 / 10%) 0 12px 24px 0 ;
+    transition: opacity 0.3s ease 0s, margin 0.3s ease 0s, visibility 0.3s ease 0s;
+    cursor: pointer;
+    -webkit-animation:shake 0.82s cubic-bezier(.36,.07,.19,.97) both infinite 1.5s;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both infinite 1.5s;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.open-chat i {
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    font-size: 24px;
+
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.body-chat {
+
+    z-index: 1030;
+    position: absolute;
+    display: none;
+    flex-flow: column;
+    justify-content: end!important;
+    position: -webkit-sticky!important;
+    position: fixed;
+    right: 20px;
+    margin-right: 20px;
+    bottom: 100px;
+
+    background: #efe7dd url("https://cloud.githubusercontent.com/assets/398893/15136779/4e765036-1639-11e6-9201-67e728e86f39.jpg") repeat;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow:rgb(0 0 0 / 10%) 0 12px 24px 0 ;
+    transition: all 0.4s;
+}
+.form-header {
+    padding: 13px;
+    background:rgb(9, 94, 84);
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.form-header h6 {
+    margin-top: 12px;
+    margin-left: 10px;
+}
+.chat-form {
+    padding: 15px
+}
+
+.form-field {
+    margin-bottom: 0.5rem!important;
+}
+
+.chat-form textarea {
+    resize: none
+}
+
+.form-control:focus,
+.btn:focus {
+    box-shadow: none
+}
+
+.btn,
+.btn:focus,
+.btn:hover {
+    background: #4FCE5D;
+    border: #4FCE5D;
+}
+.form-control:focus,
+.btn:focus {
+    box-shadow: none
+}
+
+.btn,
+.btn:focus,
+.btn:hover {
+    background-color: #4FCE5D;
+    border: #4FCE5D
+}
+
+.chat-btn {
+width: 100%;
+}
+
+
+.chat-btn i {
+    transition: all 0.9s ease
+}
+
+
+
+.chat-btn {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4FCE5D;
+    color: #fff;
+    border: none;
+    text-align: center !important;
+}
+
+.chat-profile {
+    display: flex;
+    background: #4FCE5D;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.chat-profile img{
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.chat-online{
+
+    width: 12px;
+    height: 12px;
+    text-align: right;
+    box-sizing: border-box;
+    background-color: rgb(74, 213, 4);
+    display: flex;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgb(9, 94, 84);
+}
+
+.text-desc {
+    text-align: center;
+}
